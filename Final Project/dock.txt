@@ -1,0 +1,14 @@
+//
+Receptor
+pro.pdb
+RMSD
+1.0
+Binding pocket
+Xmin Xmax
+Ymin Ymax
+Zmin Zmax
+Number of binding poses
+20
+Ligands list
+ligands.list
+//
