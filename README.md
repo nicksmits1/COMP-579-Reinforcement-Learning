@@ -52,21 +52,24 @@ Assignments and project completed as part of COMP 579 - Reinforcement Learning a
 <b>Final Project</b>: Evaluation of DQN Variants for ICU Sepsis Treatment
 
 Objective: Investigate and compare multiple extensions of Deep Q-Networks (DQN) on the ICU-Sepsis-v2 environment, a clinically inspired benchmark simulating sepsis treatment in intensive care units. The goal was to determine whether architectural and algorithmic improvements could outperform the standard DQN baseline.
-	•	Environment: ICU-Sepsis-v2 models sepsis treatment as a Markov Decision Process (MDP) with 716 discrete health states derived from real ICU patient data (MIMIC-III). The 25 discrete actions correspond to different combinations of intravenous fluid and vasopressor dosages. Rewards are sparse and outcome-based: +1 for patient survival, 0 otherwise.
-	•	Algorithms Implemented:
-	•	Base DQN – two-layer MLP, ε-greedy exploration, experience replay, target networks.
-	•	Prioritized DQN – prioritizes transitions with large temporal-difference (TD) errors for improved sample efficiency.
-	•	Double DQN – reduces overestimation bias by decoupling action selection from evaluation.
-	•	Dueling DQN – separates value and advantage estimation for better state-action value decomposition.
-	•	Multi-Step DQN – propagates multi-step returns for improved credit assignment.
-	•	Noisy DQN – replaces ε-greedy with learned parameterized noise for adaptive exploration.
-	•	Distributional DQN – predicts a full return distribution rather than just its expectation.
-	•	Rainbow DQN – combines multi-step learning, distributional RL, prioritized replay, noisy nets, double Q-learning, and dueling architecture.
-	•	Key Results:
-	•	Best performance: Dueling DQN achieved the highest final returns (~0.8238), followed closely by Prioritized DQN (~0.8135).
-	•	Base DQN and Double DQN performed similarly (~0.8089 and ~0.8056), while Rainbow, Multi-Step, and Distributional DQN underperformed, likely due to limited hyperparameter tuning.
-	•	Prioritized DQN converged faster than Dueling DQN but to a slightly lower final return.
-	•	Complex methods (Rainbow, Multi-Step) were more sensitive to small grid searches and environment vectorization quirks.
-	•	Conclusion: Architectural improvements such as dueling networks and prioritized replay show promise for optimizing sepsis treatment policies in this simulated setting. More exhaustive hyperparameter searches may unlock the potential of more complex methods like Rainbow and Distributional DQN.
+- Environment: ICU-Sepsis-v2 models sepsis treatment as a Markov Decision Process (MDP) with 716 discrete health states derived from real ICU patient data (MIMIC-III). The 25 discrete actions correspond to different combinations of intravenous fluid and vasopressor dosages. Rewards are sparse and outcome-based: +1 for patient survival, 0 otherwise.
+
+- Algorithms Implemented:
+	- Base DQN – two-layer MLP, ε-greedy exploration, experience replay, target networks.
+	- Prioritized DQN – prioritizes transitions with large temporal-difference (TD) errors for improved sample efficiency.
+	- Double DQN – reduces overestimation bias by decoupling action selection from evaluation.
+	- Dueling DQN – separates value and advantage estimation for better state-action value decomposition.
+	- Multi-Step DQN – propagates multi-step returns for improved credit assignment.
+	- Noisy DQN – replaces ε-greedy with learned parameterized noise for adaptive exploration.
+	- Distributional DQN – predicts a full return distribution rather than just its expectation.
+	- Rainbow DQN – combines multi-step learning, distributional RL, prioritized replay, noisy nets, double Q-learning, and dueling architecture.
+
+- Key Results:
+	- Best performance: Dueling DQN achieved the highest final returns (~0.8238), followed closely by Prioritized DQN (~0.8135).
+	-Base DQN and Double DQN performed similarly (~0.8089 and ~0.8056), while Rainbow, Multi-Step, and Distributional DQN underperformed, likely due to limited hyperparameter tuning.
+	- Prioritized DQN converged faster than Dueling DQN but to a slightly lower final return.
+	- Complex methods (Rainbow, Multi-Step) were more sensitive to small grid searches and environment vectorization quirks.
+
+- Conclusion: Architectural improvements such as dueling networks and prioritized replay show promise for optimizing sepsis treatment policies in this simulated setting. More exhaustive hyperparameter searches may unlock the potential of more complex methods like Rainbow and Distributional DQN.
 
 Note: This repo only contains the sections of the project I completed, thus methods mentioned in the project paper and outlined above are not included as they were completed by me team members, James Randolph and Abdullah Paracha.
