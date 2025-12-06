@@ -73,8 +73,6 @@ Training curves for the REINFORCE and Actor-Critic models on the Acrobot-v1 and 
 
 <img width="759" height="940" alt="Screenshot 2025-12-06 at 00 21 36" src="https://github.com/user-attachments/assets/1cf2c133-2214-4d1a-ac5b-bb9ca37a4d2b" />
 
-<img width="758" height="452" alt="Screenshot 2025-12-06 at 00 31 59" src="https://github.com/user-attachments/assets/47fb21ca-0630-45cc-aa6a-18f292a3b6e7" />
-
 ---
 
 ## 🏥 Final Project — DQN Variants for ICU Sepsis Treatment  
