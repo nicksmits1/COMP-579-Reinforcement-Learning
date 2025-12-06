@@ -60,6 +60,21 @@ This assignment implemented neural approximators for both Q‑learning and polic
 - Training curves (mean ± std) across seeds  
 - Comparisons of stability and convergence across architectures  
 
+### Results
+
+Training curves for the Deep Q-Learning (with replay buffer) and Expected SARSA (with replay buffer) models on the Acrobot-v1 and ALE-Assault-Ram-v5 gymnasium environments for various learning rates, \alpha and exploration rates, \epsilon.
+
+<img width="758" height="523" alt="Screenshot 2025-12-06 at 00 33 29" src="https://github.com/user-attachments/assets/560c2b10-9972-4ea6-9bfe-05ff657be867" />
+
+<img width="758" height="520" alt="Screenshot 2025-12-06 at 00 33 44" src="https://github.com/user-attachments/assets/cae1d6c0-b050-4e4f-a127-d875a97d8c0c" />
+
+
+Training curves for the REINFORCE and Actor-Critic models on the Acrobot-v1 and ALE-Assault-Ram-v5 gymnasium environments for a fixed and decaying temperature.
+
+<img width="759" height="940" alt="Screenshot 2025-12-06 at 00 21 36" src="https://github.com/user-attachments/assets/1cf2c133-2214-4d1a-ac5b-bb9ca37a4d2b" />
+
+<img width="758" height="452" alt="Screenshot 2025-12-06 at 00 31 59" src="https://github.com/user-attachments/assets/47fb21ca-0630-45cc-aa6a-18f292a3b6e7" />
+
 ---
 
 ## 🏥 Final Project — DQN Variants for ICU Sepsis Treatment  
